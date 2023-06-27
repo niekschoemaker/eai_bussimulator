@@ -53,6 +53,10 @@ public class Infobord extends Application{
 		Platform.runLater(updater);
 	}
 
+	private void addLabelsToPane(GridPane pane) {
+		pane.add(new Label("Voor het laatst bijgewerkt op :"), 0, 0);
+	}
+
 	@Override
 	public void start(Stage primaryStage) {
 		String selector = "(HALTE = '"+ halte + "') AND (RICHTING='"+ richting + "')";
